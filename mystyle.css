@@ -29,44 +29,10 @@ body {
 
 body.landingpage {
   background-color: black;
-  background-image: url('fire.jpg');
   min-height: 100%; 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
- div.nextpage{
-      position: fixed;
-  bottom: 10%;
-  left:15%;
-  right:15%;
-    border-radius: 25px;
-  color: black;
-    font-size: 44px;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-    font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
-    background-color: orange;
-
-}
-#CheckAns
-{
-  background-color: #00FFFF; 
-}
-
-
-input[type=text] {
-  width: 50%;
-  padding: 20px 20px;
-  margin: 20px 20px;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-    font-size: 60px;
-  text-align: right;
-}
 

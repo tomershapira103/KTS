@@ -6,15 +6,30 @@ body {
 }
 
  img.logo{
-  display: block;
-  position: fixed;
-  top: 10%;
-  width: 70%;
+  top: 0%;
+  width: 100%;
 height: auto;
-  margin-left: 15%;  /* Negative half of width. */
 
 }
 
+div.logo{
+  display: block;
+  position: fixed;
+  top: 10%;
+  width: 40%;
+    margin-left: 30%;  
+
+border-radius: 25px;
+color: black;
+font-size: 44px;
+padding: 14px 25px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+background-color: black;
+
+}
 
 table.icons {
   display: block;
@@ -22,7 +37,7 @@ table.icons {
   top: 55%;
   height: auto;
   left:50%;
-   margin-left: -300px; 
+   margin-left: -420px; 
 
 }
 
@@ -30,3 +45,4 @@ img.contact_buttons{
   width: 170px;
   height: auto;
 }
+

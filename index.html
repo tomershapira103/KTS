@@ -6,10 +6,30 @@
       <meta name="keywords" content="Dr,Keren,Tiberg,Shapira,Ortho,Orthodontics,KTS,smile,חיוך,קשתיות,שקופות,יישור,שיניים,אורתו,אורתודנט,אורתודנטיה,קרן,טיברג,שפירא,דר,ד&quot;ר">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" type="text/css" href="mystyle.css">
+      <script lang="javascript">
+            var background_play = false;
+            var audio = new Audio('media/happy-day-113985.mp3');
+            audio.loop=true;
+           function play_soundtrack() {
+            if (background_play==false){
+                  audio.play();
+                  background_play = true;
+                  document.getElementById("play_button").src="imgs/play.png";
+                 
+            }
+            else
+            {
+                  audio.pause();
+                  background_play = false;
+                  document.getElementById("play_button").src="imgs/mute.jpg";
+
+            }
+            }
+      </script>
 </head>
 <body>
       <video autoplay muted loop playsinline class="background-video">
-            <source src="videos/1084872961-hd.mov" type="video/mp4">
+            <source src="media/1084872961-hd.mov" type="video/mp4">
       </video>
       <div class="logo">
             <!-- <img src="imgs/KTS-Logo.jpg" class="logo"> -->
@@ -27,5 +47,6 @@
       </tr>
       </table>
       <div class="yolo"><img src="imgs/yolo.png" class="yolo"></div>
+      <img id="play_button" class="play-mute" src="imgs/mute.jpg" onclick="play_soundtrack();">
 </body>
 </html>

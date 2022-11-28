@@ -17,21 +17,6 @@ video.background-video {
   width: 100%;
 }
 
-/* div.logo{
-  position: fixed;
-  top: 50%;
-  width: 70%;
-border-radius: 25px;
-color: black;
-font-size: 44px;
-padding: 14px 25px;
-font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
-background-color: black;
- Center div
-left: 50%;
-transform: translate(-50%, 0);
-} */
-
 div.logo{
   position: fixed;
   top: 35%;
@@ -103,20 +88,6 @@ img.play-mute
     min-width: 100%;
     min-height: 100%;
   }
-
-  /* div.logo{
-    position: fixed;
-    top: 40%;
-    width: 30%;
-  border-radius: 25px;
-  color: black;
-  font-size: 44px;
-  padding: 14px 25px;
-  font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
-  background-color: black;
-  left: 50%;
-  transform: translate(-50%, 0);
-  } */
 
   div.logo{
     position: fixed;

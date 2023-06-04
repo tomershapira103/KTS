@@ -1,32 +1,12 @@
 <!DOCTYPE html>
-<!-- test comment -->
 <html>
 <head>
       <title>KTS Orthodontics</title>
       <meta name="description" content="אורתודונטיה ויישור שיניים עם קשתיות שקופות | ד&quot;ר קרן טיברג-שפירא">
       <meta name="keywords" content="Dr,Keren,Tiberg,Shapira,Ortho,Orthodontics,KTS,smile,חיוך,קשתיות,שקופות,יישור,שיניים,אורתו,אורתודנט,אורתודנטיה,קרן,טיברג,שפירא,דר,ד&quot;ר">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" type="text/css" href="mystyle.css">
-      <script lang="javascript">
-            var background_play = false;
-            var audio = new Audio('media/happy-day-113985.mp3');
-            audio.loop=true;
-           function play_soundtrack() {
-            if (background_play==false){
-                  audio.play();
-                  background_play = true;
-                  document.getElementById("play_button").src="imgs/play.png";
-                 
-            }
-            else
-            {
-                  audio.pause();
-                  background_play = false;
-                  document.getElementById("play_button").src="imgs/mute.jpg";
-
-            }
-            }
-      </script>
+      <link rel="stylesheet" type="text/css" href="./mystyle.css">
+      <link rel="stylesheet" href="./w3.css">
       <!-- Google tag (gtag.js) -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11186412790"></script>
       <script>
@@ -35,26 +15,26 @@
             gtag('js', new Date());
             gtag('config', 'AW-11186412790');
       </script>
+      <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+      <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+      <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+      <script src="./index.js" type="text/babel"></script>
 </head>
 <body>
-      <video autoplay muted loop playsinline class="background-video">
-            <source src="media/1084872961-hd.mov" type="video/mp4">
-      </video>
-      <div class="logo">
-            <img src="imgs/KTS-white-logo.png" class="logo">
-            <H1>By Dr. Keren Tiberg-Shapira</H1>
-            <H1>יישור שיניים בקשתיות שקופות</H1>
-      </div>
-      
-      <table class="icons">
-      <tr>
-            <td class="button_spacing"><a href="https://wa.me/972533969336?text=%D7%A9%D7%9C%D7%95%D7%9D%2C+%D7%90%D7%A9%D7%9E%D7%97+%D7%9C%D7%A7%D7%91%D7%9C+%D7%A4%D7%A8%D7%98%D7%99%D7%9D+%D7%A2%D7%9C+%D7%94%D7%98%D7%99%D7%A4%D7%95%D7%9C+%D7%94%D7%9E%D7%AA%D7%A7%D7%93%D7%9D+%D7%A9%D7%90%D7%AA%D7%9D+%D7%9E%D7%A6%D7%99%D7%A2%D7%99%D7%9D"><img src="imgs/contact_via_whatsapp.png" class="contact_buttons"></a></td>
-            <td class="button_spacing"><a href="https://www.instagram.com/kts.ortho"><img src="imgs/contact_via_insta.png" class="contact_buttons"></a></td>
-            <td class="button_spacing"><a href="https://www.facebook.com/profile.php?id=100083220517896"><img src="imgs/contact_via_facebook.png" class="contact_buttons"></a></td>
-            <td class="button_spacing"><a href="mailto:KTS.ortho@gmail.com?subject=גם אני רוצה חיוך מושלם :)&body=שלום, אשמח לקבל פרטים על הטיפול המתקדם שאתם מציעים"><img src="imgs/contact_via_email.png" class="contact_buttons"></a></td>
-      </tr>
-      </table>
-      <div class="yolo"><img src="imgs/yolo.png" class="yolo"></div>
-      <img id="play_button" class="play-mute" src="imgs/mute.jpg" onclick="play_soundtrack();">
+      <div id="root"></div>  
+      <!-- <div id="menu">
+            <div class="w3-sidebar w3-bar-block w3-animate-right div--menulist" id="menuList">
+                  <button class="w3-bar-item" onclick="closeMenu()">סגור &times;</button>
+                  <button class="w3-button w3-block w3-left-align w3-border-bottom" onclick="">מה השיטה</button>
+                  <button class="w3-button w3-block w3-left-align w3-border-bottom" onclick="">מי הרופאה</button>
+                  <button class="w3-button w3-block w3-left-align w3-border-bottom" onclick="">FAQ</button>
+                  <button class="w3-button w3-block w3-left-align w3-border-bottom" onclick="">פרטים על המרפאה</button>
+                  <button class="w3-button w3-block w3-left-align w3-border-bottom" onclick="">צור קשר</button>
+
+            </div>
+            <div class="w3-teal div--button" id="menuButton">
+                  <button class="w3-button w3-white w3-text-black w3-xxxlarge w3-right" onclick="openMenu()">&#9776;</button>
+            </div>
+      </div> -->
 </body>
 </html>

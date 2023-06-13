@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html dir="rtl" lang="he">
 <head>
       <title>KTS Orthodontics</title>
       <meta name="description" content="אורתודונטיה ויישור שיניים עם קשתיות שקופות | ד&quot;ר קרן טיברג-שפירא">
@@ -7,30 +7,17 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" type="text/css" href="./mystyle.css">
       <link rel="stylesheet" href="./w3.css">
-      <!-- Google tag (gtag.js) -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11186412790"></script>
-      <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'AW-11186412790');
-      </script>
-      <!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script> -->
-      <!-- <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> -->
-      <!-- <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> -->
       <script src="./index.js"></script>
 </head>
 <body>
-      <!-- <div id="root"></div>  -->
       <div id="HomePage">
-            <video autoPlay muted loop playsInline class="background-video" id="background-video">
+            <video muted autoPlay loop nodownload noremoteplayback playsinline class="background-video" id="background-video">
                   <source src="./media/output3.mov" type="video/mp4"/>
             </video>
             <div class="homepage-titles" id="homepage-titles">
                   <img src="./imgs/KTS-white-logo.png" class="logo"/>
                   <h1 class="h1--titles">By Dr. Keren Tiberg-Shapira</h1>
                   <h1 class="h1--titles">יישור שיניים בקשתיות שקופות</h1>
-                  <!-- <img src="./imgs/yolo.png" class="yolo"/> -->
             </div>
       </div> 
       <div class="contact_bar">
@@ -42,22 +29,112 @@
                    <li><a href="mailto:KTS.ortho@gmail.com?subject=גם אני רוצה חיוך מושלם :)&body=שלום, אשמח לקבל פרטים על הטיפול המתקדם שאתם מציעים"><img src="./imgs/contact_via_email.png" class="contact_buttons"/></a></li>
             </ul> 
        </div>
-      <!-- <div id="menu">
+
+      <div id="menu">
             <div class="w3-sidebar w3-bar-block w3-animate-right div--menulist" id="menuList">
-                  <button class="w3-bar-item" onclick="closeMenu()">סגור &times;</button>
                   <button class="w3-button w3-block w3-left-align w3-border-bottom" onclick="showPage('HomePage')">דף הבית</button>
                   <button class="w3-button w3-block w3-left-align w3-border-bottom" onclick="showPage('AboutMethodPage')">על השיטה</button>
                   <button class="w3-button w3-block w3-left-align w3-border-bottom" onclick="showPage('AboutTeamPage')">על הצוות</button>
                   <button class="w3-button w3-block w3-left-align w3-border-bottom" onclick="showPage('AboutClinicPage')">על המרפאה</button>
                   <button class="w3-button w3-block w3-left-align w3-border-bottom" onclick="showPage('FaqPage')">FAQ</button>
             </div>
-            <div class="w3-teal div--button" id="menuButton">
+            <div class="w3-teal div--menubutton" id="menuButton">
                   <button class="w3-button w3-white w3-text-black w3-xxxlarge w3-right" onclick="openMenu()">&#9776;</button>
             </div>
       </div>
-      <div class="content-page" id="AboutMethodPage">About Method Page</div>
-      <div class="content-page" id="AboutTeamPage">About Team Page</div>
-      <div class="content-page" id="AboutClinicPage">About Clinic Page</div>
-      <div class="content-page" id="FaqPage">Faq Page</div> -->
+      <img src="./imgs/KTS-white-logo.png" class="little-logo" id="little-logo" onclick="showPage('HomePage')"/>
+      <div class="content-page" id="AboutMethodPage">
+            <article>
+                  <h3>על השיטה:</h3>
+                  <ul>
+                        <li>ב-KTS Orthodontics אנו מתמקדים ביישור שיניים בשיטה העדכנית ביותר בעולם: יישור שיניים עם קשתיות שקופות.</li>
+                        <li>שיטה זו חוללה מהפכה באופן שבו ניתן כיום ליישר שיניים, ומספקת אלטרנטיבה דיסקרטית ויעילה בהשוואה לגשר המסורתי. </li>
+                        <li>הודות לחומר האיכותי ממנו עשויות הקשתיות, והודות לתכנון המותאם אישית, הקשתיות השקופות מציעות פתרון נוח, אסתטי ומדויק עבור כל מטופל.</li>
+                  </ul>
+                  <a href="https://wa.me/972529772768?text=%D7%92%D7%9D%20%D7%90%D7%A0%D7%99%20%D7%A8%D7%95%D7%A6%D7%94%20%D7%97%D7%99%D7%95%D7%9A%20%D7%9E%D7%95%D7%A9%D7%9C%D7%9D%2C%20%D7%90%D7%99%D7%9A%20%D7%9E%D7%AA%D7%97%D7%99%D7%9C%D7%99%D7%9D%3F">לתיאום תור לפגישת ייעוץ</a>
+            </article>
+      </div>
+      <div class="content-page" id="AboutTeamPage">
+            <article>
+                  <h3>על הצוות:</h3>
+                  <ul>
+                        <li>ברוכים הבאים  למרפאת KTS Orthodontics המציעה שירותי יישור שיניים עם קשתיות שקופות.</li>
+                        <li>את מרפאת השיניים מובילה ד״ר קרן טיברג שפירא DMD, בוגרת הפקולטה לרפואת שיניים בהדסה עין כרם ירושלים.</li>
+                        <li>הרופאה בעלת ניסיון בתחום ומקפידה להתעדכן בכל החידושים בעולם יישור השיניים.</li>
+                  </ul>
+                  <a href="https://wa.me/972529772768?text=%D7%92%D7%9D%20%D7%90%D7%A0%D7%99%20%D7%A8%D7%95%D7%A6%D7%94%20%D7%97%D7%99%D7%95%D7%9A%20%D7%9E%D7%95%D7%A9%D7%9C%D7%9D%2C%20%D7%90%D7%99%D7%9A%20%D7%9E%D7%AA%D7%97%D7%99%D7%9C%D7%99%D7%9D%3F">לתיאום תור לפגישת ייעוץ</a>
+            </article>
+      </div>
+      <div class="content-page" id="AboutClinicPage">
+            <article>
+                  <h3>על המרפאה:</h3>
+                  <ul>
+                        <li>ברוכים הבאים למרפאת KTS Orthodontics, היעד שלך כדי להשיג את החיוך המושלם.</li>
+                        <li>אנו מבצעים יישור שיניים באמצעות קשתיות שקופות של המותג האמריקאי היוקרתי והמתקדם ביותר שקיים בעולם: Spark.</li>
+                        <li>מרפאת השיניים הפרטית שלנו מציעה סביבה שלווה ובלעדית, המבטיחה שחווית יישור השיניים שלך תהיה נוחה ויוצאת דופן כאחד.</li>
+                        <li>הצוות המיומן והמנוסה שלנו מחויב לספק לך את הסטנדרט הגבוה ביותר של טיפול.</li>
+                        <li>אנו מתגאים בכך שאנו עומדים בחזית החידושים והטכניקות הדנטליות, ומבטיחים שתקבל את הטיפולים המתקדמים והיעילים ביותר שיש.</li>
+                  </ul>
+                  <p class="p--content">
+                        הרצפלד 16, קרית אונו<br>
+                        <a href="https://waze.com/ul/hsv8y35fv5">Waze</a>
+                  </p>
+                  <a href="https://wa.me/972529772768?text=%D7%92%D7%9D%20%D7%90%D7%A0%D7%99%20%D7%A8%D7%95%D7%A6%D7%94%20%D7%97%D7%99%D7%95%D7%9A%20%D7%9E%D7%95%D7%A9%D7%9C%D7%9D%2C%20%D7%90%D7%99%D7%9A%20%D7%9E%D7%AA%D7%97%D7%99%D7%9C%D7%99%D7%9D%3F">לתיאום תור לפגישת ייעוץ</a>
+            </article>
+      </div>
+      <div class="content-page" id="FaqPage">
+            <article>    
+                  <h3>FAQ</h3>  
+                  <details>
+                        <summary>
+                              האם יישור שיניים בקשתיות שקופות מתאים לכולם?
+                        </summary>
+                        קשתיות שקופות מתאימות לטיפול במגוון רחב של מקרים אורתודונטיים. עם זאת, יש צורך בהערכה מקיפה של הצוות שלנו כדי לקבוע אם הקשתיות השקופות הן הבחירה הטובה ביותר עבור הצרכים הספציפיים שלך.
+                  </details>
+                  <details>
+                        <summary>
+                              כמה זמן אורך טיפול יישור שיניים ממוצע באמצעות קשתיות שקופות ?
+                        </summary>
+                        <div>
+                              משך הטיפול עם קשתיות שקופות משתנה בהתאם לגורמים אינדיבידואליים ולמורכבות המקרה. בממוצע, הטיפול יכול לנוע בין מספר חודשים ליותר משנה. הצוות במרפאת KTS Orthodontics שלנו יספק לך תוכנית טיפול אישית וציר זמן במהלך הייעוץ שלך.
+                        </div>
+                  </details>
+                  <details>
+                        <summary>
+                              כמה זמן במשך היום עלי ללכת עם הקשתיות השקופות שלי?
+                        </summary>
+                        <div>
+                              לתוצאות אופטימליות, מומלץ ללבוש את הקשתיות השקופות כ-22 שעות ביום, ולהסיר אותם רק לצורך אכילה, שתייה, צחצוח וחוט דנטלי.
+                        </div>
+                  </details>
+                  <details>
+                        <summary>
+                              האם הקשתיות השקופות של Spark נוחות לשימוש?
+                        </summary>
+                        <div>
+                              הקשתיות השקופות מעוצבות תוך מחשבה על הנוחות שלך: הן עשויות מפלסטיק חלק, ללא BPA, מותאמות היטב על השיניים וגורמות לאי נוחות מינימלית. אין השפעה על הדיבור, וקצב ההסתגלות נתונה לרצונו של המטופל.
+                        </div>
+                  </details>
+                  <details>
+                        <summary>
+                              האם אני יכול לאכול ולשתות עם הקשתיות השקופות שלי?
+                        </summary>
+                        <div>
+                              לא. מומלץ להסיר את הקשתיות השקופות כאשר אוכלים או שותים כל דבר מלבד מים. פעולה זו עוזרת למנוע הכתמה ונזקים לשיניים.
+                        </div>
+                  </details>
+                  <a href="https://wa.me/972529772768?text=%D7%92%D7%9D%20%D7%90%D7%A0%D7%99%20%D7%A8%D7%95%D7%A6%D7%94%20%D7%97%D7%99%D7%95%D7%9A%20%D7%9E%D7%95%D7%A9%D7%9C%D7%9D%2C%20%D7%90%D7%99%D7%9A%20%D7%9E%D7%AA%D7%97%D7%99%D7%9C%D7%99%D7%9D%3F">לתיאום תור לפגישת ייעוץ</a>
+            </article>
+      </div>
+      <div class="div--accessibility-button">
+            <img src="./imgs/accessibil234.png" class="img--accessibility-button" onclick="showAccessibilityPage()"/>
+      </div>
+      <div class="div--accessibility-page" id="AccessibilityPage">
+            <h1>נגישות אתר</h1>
+            <button class="button--accessibility" id="accessibility--enlargeFonts" onclick="enlargeFonts()">הגדלת כתב</button>
+            <button class="button--accessibility" id="accessibility--enlargeSpacing" onclick="enlargeSpacing()">הגדלת מרווח שורות</button>
+            <br><br>
+            <h2 onclick="hideAccessibilityPage()" class="hideAccessibilityPage">&times;</h2>
+      </div>
 </body>
 </html>

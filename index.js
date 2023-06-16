@@ -50,11 +50,21 @@ let largeSpacing = false;
 
 function enlargeFonts() {
   if (largeFonts==false) {
-    document.getElementById("accessibility--enlargeFonts").innerHTML = "הקטנת כתב";
+    document.getElementById("accessibility-enlargeFonts-botton").innerHTML = "הקטנת כתב";
+    var elements = document.getElementsByClassName('accessibility-text');
     largeFonts = true;
+    for (var i = 0; i < elements.length; i++) {
+      var element = elements[i];
+      element.style.fontSize = "2em";
+    }
   } else {
-    document.getElementById("accessibility--enlargeFonts").innerHTML = "הגדלת כתב";
+    document.getElementById("accessibility-enlargeFonts-botton").innerHTML = "הגדלת כתב";
     largeFonts = false;
+    var elements = document.getElementsByClassName('accessibility-text');
+    for (var i = 0; i < elements.length; i++) {
+      var element = elements[i];
+      element.style.fontSize = "1em";
+    }
   }
 }
 
@@ -62,10 +72,22 @@ function enlargeFonts() {
 
 function enlargeSpacing() {
   if (largeSpacing==false) {
-    document.getElementById("accessibility--enlargeSpacing").innerHTML = "הקטנת מרווח שורות";
+    document.getElementById("accessibility-enlargeSpacing-botton").innerHTML = "הקטנת מרווח שורות";
     largeSpacing = true;
+    var elements = document.getElementsByClassName('accessibility-text');
+    for (var i = 0; i < elements.length; i++) {
+      var element = elements[i];
+      element.style.lineHeight = "2";
+
+    }
   } else {
-    document.getElementById("accessibility--enlargeSpacing").innerHTML = "הגדלת מרווח שורות";
+    document.getElementById("accessibility-enlargeSpacing-botton").innerHTML = "הגדלת מרווח שורות";
     largeSpacing = false;
+    var elements = document.getElementsByClassName('accessibility-text');
+    for (var i = 0; i < elements.length; i++) {
+      var element = elements[i];
+      element.style.lineHeight = "normal";
+
+    }
   }
 }

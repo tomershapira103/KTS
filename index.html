@@ -8,6 +8,7 @@
       <link rel="stylesheet" type="text/css" href="./mystyle.css">
       <link rel="stylesheet" href="./w3.css">
       <script src="./index.js"></script>
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 <body>
       <div id="HomePage">
@@ -16,8 +17,16 @@
             </video>
             <div class="homepage-titles" id="homepage-titles">
                   <img src="./imgs/KTS-white-logo.png" class="logo"/>
-                  <h1 class="h1--titles accessibility-text">By Dr. Keren Tiberg-Shapira</h1>
+                  <h2 class="h2--titles accessibility-text">By Dr. Keren Tiberg-Shapira</h1>
                   <h1 class="h1--titles accessibility-text">יישור שיניים בקשתיות שקופות</h1>
+                  <br/>
+                  <form class="phone_form">
+                        <input type="tel" placeholder="הזינו מספר טלפון נייד" pattern="[0-9]+" maxlength="10" minlength="10" class="phone_field">
+                        <!-- <div class="froala-editor-button fr-box fr-inline" dir="rtl" style="background: rgb(245, 0, 255) !important; height: 50px !important; line-height: 50px !important; border-radius: 44px !important; cursor: pointer !important; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 23px !important; opacity: 1 !important; border: 0px solid rgb(0, 0, 0) !important; width: 100% !important; left: 1px !important; top: 1px !important;" data-border-width="0" data-poptin-animate="shake"><p style="text-align: center !important; direction: rtl !important; cursor: pointer !important;"><span style="font-family: &quot;Varela Round&quot; !important; font-size: 26px !important; color: rgb(255, 255, 255) !important; cursor: pointer !important;">לקביעת פגישת ייעוץ!</span></p></div> -->
+                        <input class="submit_button" onclick="send_phone_number()" type="submit" value="לקביעת פגישת יעוץ!"/>
+
+                  </form>
+
             </div>
       </div> 
       <div class="contact_bar">
@@ -53,6 +62,9 @@
                   </ul>
                   <a class="accessibility-text" href="https://wa.me/972529772768?text=%D7%92%D7%9D%20%D7%90%D7%A0%D7%99%20%D7%A8%D7%95%D7%A6%D7%94%20%D7%97%D7%99%D7%95%D7%9A%20%D7%9E%D7%95%D7%A9%D7%9C%D7%9D%2C%20%D7%90%D7%99%D7%9A%20%D7%9E%D7%AA%D7%97%D7%99%D7%9C%D7%99%D7%9D%3F">לתיאום תור לפגישת ייעוץ</a>
             </article>
+            <!-- <video muted autoplay loop nodownload noremoteplayback playsinline class="content-video">
+                  <source src="./media/background_video_grayscale.mp4" type="video/mp4"/>
+            </video> -->
       </div>
       <div class="content-page" id="AboutTeamPage">
             <article>

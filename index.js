@@ -91,3 +91,15 @@ function enlargeSpacing() {
     }
   }
 }
+
+function send_phone_number() {
+  Email.send({
+    SecureToken : "090a790b-86d5-4fa2-be32-5122ae16d337",
+    To : 'kts.ortho@gmail.com',
+    From : "kts.ortho@gmail.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+  }).then(
+  message => alert(message)
+  );
+}
